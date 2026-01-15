@@ -1,0 +1,3 @@
+Projects: Built apps using Python and JS.
+Skills: Python, HTML, CSS, Git, Linux.
+Learning: Flask.

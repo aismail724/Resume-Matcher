@@ -1,0 +1,4 @@
+We are hiring a Software Developer Intern.
+Required: Python, Git, SQL, REST.
+Nice to have: Docker, AWS.
+
