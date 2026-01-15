@@ -14,16 +14,27 @@ A simple Python tool that compares a resume against a job posting and outputs:
 
 ## Project Structure
 resume-matcher/
+
 src/
+
 main.py
+
 parser.py
+
 matcher.py
+
 report.py
+
 data/
+
 skills.json
+
 synonyms.json
+
 samples/
+
 resume_sample.txt
+
 job_sample.txt
 
 ## Output example
