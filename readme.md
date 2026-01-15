@@ -27,7 +27,7 @@ resume_sample.txt
 job_sample.txt
 
 ## Output example
-==================================================
+
 Match Score: 28.6%
 
 Matched Skills:
@@ -35,4 +35,4 @@ git, python
 
 Missing Skills:
 api, aws, docker, rest api, sql
-==================================================
+
