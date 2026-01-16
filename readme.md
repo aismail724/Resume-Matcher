@@ -39,11 +39,19 @@ job_sample.txt
 
 ## Output example
 
-Match Score: 28.6%
+Resume–Job Match Summary
+--------------------------------------------------
+Overall Match Score: 28.6%
 
-Matched Skills:
-git, python
+Matched Skills (2):
+✔ python
+✔ git
 
-Missing Skills:
-api, aws, docker, rest api, sql
+Missing Skills (5):
+✖ api
+✖ aws
+✖ docker
+✖ rest api
+✖ sql
+--------------------------------------------------
 
