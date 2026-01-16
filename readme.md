@@ -44,14 +44,21 @@ Resume–Job Match Summary
 Overall Match Score: 28.6%
 
 Matched Skills (2):
+
 ✔ python
+
 ✔ git
 
 Missing Skills (5):
+
 ✖ api
+
 ✖ aws
+
 ✖ docker
+
 ✖ rest api
+
 ✖ sql
 --------------------------------------------------
 
