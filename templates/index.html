@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume–Job Skill Matcher</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Resume–Job Skill Matcher</h1>
+    <p class="subtitle">Paste a resume and a job posting. Get a match score + skill gaps.</p>
+
+    {% if error %}
+      <div class="alert">{{ error }}</div>
+    {% endif %}
+
+    <form method="post" action="/analyze" class="grid">
+      <div>
+        <label for="resume_text">Resume Text</label>
+        <textarea id="resume_text" name="resume_text" placeholder="Paste resume text here..."></textarea>
+      </div>
+
+      <div>
+        <label for="job_text">Job Posting Text</label>
+        <textarea id="job_text" name="job_text" placeholder="Paste job posting text here..."></textarea>
+      </div>
+
+      <div class="actions">
+        <button type="submit">Analyze</button>
+      </div>
+    </form>
+
+    <p class="hint">
+      Tip: Try your sample files from <code>samples/</code> to test quickly.
+    </p>
+  </div>
+</body>
+</html>

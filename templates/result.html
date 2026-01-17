@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Results — Resume–Job Skill Matcher</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <a class="back" href="/">← New analysis</a>
+
+    <h1>Results</h1>
+
+    <div class="score-card">
+      <div class="score">
+        <div class="score-number">{{ score }}%</div>
+        <div class="score-label">Match Score</div>
+      </div>
+      <div class="meta">
+        <div>Resume skills found: <strong>{{ resume_count }}</strong></div>
+        <div>Job skills found: <strong>{{ job_count }}</strong></div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <h2>Matched Skills ({{ matched|length }})</h2>
+        {% if matched %}
+          <div class="chips">
+            {% for s in matched %}
+              <span class="chip good">{{ s }}</span>
+            {% endfor %}
+          </div>
+        {% else %}
+          <p class="muted">None</p>
+        {% endif %}
+      </div>
+
+      <div class="card">
+        <h2>Missing Skills ({{ missing|length }})</h2>
+        {% if missing %}
+          <div class="chips">
+            {% for s in missing %}
+              <span class="chip bad">{{ s }}</span>
+            {% endfor %}
+          </div>
+        {% else %}
+          <p class="muted">None</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</body>
+</html>

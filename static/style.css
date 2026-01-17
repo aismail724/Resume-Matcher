@@ -1,0 +1,96 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #0b0f17;
+  color: #e8eefc;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+
+h1 { margin: 0 0 10px; font-size: 34px; }
+.subtitle { margin: 0 0 24px; color: #b7c2dd; }
+
+.grid { display: grid; gap: 16px; }
+label { display:block; margin: 0 0 8px; color: #b7c2dd; }
+
+textarea {
+  width: 100%;
+  min-height: 220px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #223055;
+  background: #0f1522;
+  color: #e8eefc;
+  outline: none;
+  resize: vertical;
+}
+
+textarea:focus { border-color: #4d7dff; }
+
+.actions { display:flex; justify-content:flex-end; }
+button {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 12px;
+  background: #4d7dff;
+  color: #071022;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:hover { filter: brightness(1.05); }
+
+.alert {
+  background: #2a1b1b;
+  border: 1px solid #ff6b6b;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.hint { margin-top: 16px; color: #b7c2dd; }
+code { background: #111a2c; padding: 2px 6px; border-radius: 8px; }
+
+.back { color: #b7c2dd; text-decoration: none; display:inline-block; margin-bottom: 16px; }
+.back:hover { text-decoration: underline; }
+
+.score-card {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid #223055;
+  border-radius: 16px;
+  background: #0f1522;
+  margin: 18px 0;
+}
+
+.score-number { font-size: 44px; font-weight: 800; line-height: 1; }
+.score-label { color: #b7c2dd; }
+
+.two-col { display:grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 900px) { .two-col { grid-template-columns: 1fr; } }
+
+.card {
+  padding: 18px;
+  border: 1px solid #223055;
+  border-radius: 16px;
+  background: #0f1522;
+}
+
+.muted { color: #b7c2dd; }
+
+.chips { display:flex; flex-wrap: wrap; gap: 10px; }
+.chip {
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid #223055;
+  font-size: 14px;
+}
+.chip.good { border-color: #2bd576; color: #b6ffd3; }
+.chip.bad { border-color: #ff6b6b; color: #ffd0d0; }
